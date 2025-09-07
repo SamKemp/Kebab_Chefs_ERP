@@ -6,6 +6,9 @@
 :root {
   color-scheme: light;
 }
+:root.dark {
+  color-scheme: dark;
+}
 
 html, body, #root {
   height: 100%;
@@ -16,11 +19,11 @@ html, body, #root {
 }
 
 .card {
-  @apply bg-white shadow-sm border border-gray-200 rounded-lg;
+  @apply bg-white shadow-sm border border-gray-200 rounded-lg dark:bg-gray-900 dark:border-gray-800;
 }
 
 .card-header {
-  @apply px-4 py-3 border-b border-gray-200 flex items-center justify-between;
+  @apply px-4 py-3 border-b border-gray-200 flex items-center justify-between dark:border-gray-800;
 }
 
 .card-body {

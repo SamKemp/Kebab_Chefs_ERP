@@ -71,7 +71,7 @@ export default function RecipesPage() {
                   <li key={idx}>
                     <div className="font-medium">{s.stepHeader}</div>
                     {s.list?.length ? (
-                      <ul className="list-disc pl-5 text-sm text-gray-700">
+                      <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300">
                         {s.list.map((l, i) => (<li key={i}>{l}</li>))}
                       </ul>
                     ) : null}
@@ -79,7 +79,7 @@ export default function RecipesPage() {
                 ))}
               </ol>
             ) : (
-              <div className="text-sm text-gray-500">No steps for this recipe.</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400">No steps for this recipe.</div>
             )}
           </div>
         </div>

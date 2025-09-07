@@ -40,17 +40,17 @@ export default function Table<T extends Record<string, any>>({ columns, rows, se
   return (
     <div className="card">
       <div className="card-header">
-        <input value={q} onChange={(e: ChangeEvent<HTMLInputElement>)=>setQ(e.target.value)} placeholder={placeholder} className="w-full max-w-md rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400" />
+  <input value={q} onChange={(e: ChangeEvent<HTMLInputElement>)=>setQ(e.target.value)} placeholder={placeholder} className="w-full max-w-md rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100" />
       </div>
       <div className="card-body overflow-x-auto">
         <table className="min-w-full text-sm">
           <thead>
-            <tr className="text-left text-gray-600">
+            <tr className="text-left text-gray-600 dark:text-gray-300">
               {columns.map(col => (
                 <th key={String(col.key)} className="px-3 py-2 cursor-pointer select-none" onClick={() => setSort((s: {key: keyof T, dir: 'asc' | 'desc'} | null) => s?.key === col.key ? { key: col.key, dir: s.dir === 'asc' ? 'desc' : 'asc' } : { key: col.key, dir: 'asc' })}>
                   <div className="inline-flex items-center gap-1">
                     {col.header}
-                    {sort?.key === col.key && (<span className="text-gray-400">{sort.dir === 'asc' ? '▲' : '▼'}</span>)}
+                    {sort?.key === col.key && (<span className="text-gray-400 dark:text-gray-500">{sort.dir === 'asc' ? '▲' : '▼'}</span>)}
                   </div>
                 </th>
               ))}
@@ -58,7 +58,7 @@ export default function Table<T extends Record<string, any>>({ columns, rows, se
           </thead>
           <tbody>
             {filtered.map((row, i) => (
-              <tr key={i} className={`border-t ${onRowClick ? 'hover:bg-gray-50 cursor-pointer' : ''}`} onClick={onRowClick ? () => onRowClick(row) : undefined}>
+              <tr key={i} className={`border-t border-gray-200 dark:border-gray-800 ${onRowClick ? 'hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer' : ''}`} onClick={onRowClick ? () => onRowClick(row) : undefined}>
                 {columns.map(col => (
                   <td key={String(col.key)} className="px-3 py-2 whitespace-nowrap">
                     {col.render ? col.render(row) : String(row[col.key] ?? '')}
@@ -68,7 +68,7 @@ export default function Table<T extends Record<string, any>>({ columns, rows, se
             ))}
             {filtered.length === 0 && (
               <tr>
-                <td colSpan={columns.length} className="px-3 py-6 text-center text-gray-500">No results</td>
+                <td colSpan={columns.length} className="px-3 py-6 text-center text-gray-500 dark:text-gray-400">No results</td>
               </tr>
             )}
           </tbody>

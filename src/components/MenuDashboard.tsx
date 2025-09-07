@@ -64,15 +64,15 @@ export default function MenuDashboard() {
           <button className="text-sm text-red-600 hover:underline" onClick={() => clear()}>Clear</button>
         </div>
         <div className="card-body space-y-2">
-          {items.length === 0 && <div className="text-sm text-gray-500">No recipes on the menu.</div>}
+          {items.length === 0 && <div className="text-sm text-gray-500 dark:text-gray-400">No recipes on the menu.</div>}
           {items.map(i => {
             const r = recipeById.get(i.recipeId)
             if (!r) return null
             return (
               <div key={i.recipeId} className="flex items-center justify-between gap-2">
                 <button className={`text-left flex-1 ${selectedRecipeId === i.recipeId ? 'font-semibold' : ''}`} onClick={() => select(i.recipeId)}>{r.name}</button>
-                <input type="number" className="w-16 border rounded px-2 py-1 text-sm" value={i.quantity} min={1} onChange={e => setQuantity(i.recipeId, Number(e.target.value))} />
-                <button className="text-sm text-gray-600 hover:underline" onClick={() => remove(i.recipeId)}>Remove</button>
+                <input type="number" className="w-16 border rounded px-2 py-1 text-sm dark:bg-gray-900 dark:border-gray-700" value={i.quantity} min={1} onChange={e => setQuantity(i.recipeId, Number(e.target.value))} />
+                <button className="text-sm text-gray-600 hover:underline dark:text-gray-300" onClick={() => remove(i.recipeId)}>Remove</button>
               </div>
             )
           })}
@@ -82,14 +82,14 @@ export default function MenuDashboard() {
       <div className="card lg:col-span-1">
         <div className="card-header"><div className="font-medium">Selected Recipe Steps</div></div>
         <div className="card-body">
-          {!selectedRecipe && <div className="text-sm text-gray-500">Select a recipe from the menu.</div>}
+          {!selectedRecipe && <div className="text-sm text-gray-500 dark:text-gray-400">Select a recipe from the menu.</div>}
           {selectedRecipe && (
             <ol className="space-y-3 list-decimal pl-5">
               {selectedRecipe.steps?.map((s, idx) => (
                 <li key={idx}>
                   <div className="font-medium">{s.stepHeader}</div>
                   {s.list?.length ? (
-                    <ul className="list-disc pl-5 text-sm text-gray-700">
+                    <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300">
                       {s.list.map((l, i) => (<li key={i}>{l}</li>))}
                     </ul>
                   ) : null}
@@ -103,11 +103,11 @@ export default function MenuDashboard() {
       <div className="card lg:col-span-1">
         <div className="card-header"><div className="font-medium">Shopping List (by Store)</div></div>
         <div className="card-body space-y-4">
-          {shopping.length === 0 && <div className="text-sm text-gray-500">Add recipes to generate a shopping list.</div>}
+          {shopping.length === 0 && <div className="text-sm text-gray-500 dark:text-gray-400">Add recipes to generate a shopping list.</div>}
           {shopping.map(store => (
             <div key={store.storeId}>
-              <div className="font-medium mb-2">{store.storeName} <span className="text-gray-500">— € {store.total.toFixed(2)}</span></div>
-              <ul className="text-sm text-gray-700 space-y-1">
+              <div className="font-medium mb-2">{store.storeName} <span className="text-gray-500 dark:text-gray-400">— € {store.total.toFixed(2)}</span></div>
+              <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
                 {store.items.map((it: any, idx: number) => (
                   <li key={idx} className="flex items-center justify-between gap-2">
                     <div>
@@ -115,18 +115,18 @@ export default function MenuDashboard() {
                       {(() => {
                         const unit = ingById.get(it.ingredientId)?.unit
                         return (
-                          <span className="text-gray-500"> — need {formatQty(it.amount)}{unit ? ` ${unit}` : ''} (pack {formatQty(it.packQty)}{unit ? ` ${unit}` : ''})</span>
+                          <span className="text-gray-500 dark:text-gray-400"> — need {formatQty(it.amount)}{unit ? ` ${unit}` : ''} (pack {formatQty(it.packQty)}{unit ? ` ${unit}` : ''})</span>
                         )
                       })()}
                     </div>
-                    <div className="text-gray-500">{it.packsNeeded} × € {it.packPrice.toFixed(2)} = € {it.subtotal.toFixed(2)}</div>
+                    <div className="text-gray-500 dark:text-gray-400">{it.packsNeeded} × € {it.packPrice.toFixed(2)} = € {it.subtotal.toFixed(2)}</div>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
           {shopping.length > 0 && (
-            <div className="border-t pt-3 mt-2 flex items-center justify-between text-sm">
+            <div className="border-t border-gray-200 dark:border-gray-800 pt-3 mt-2 flex items-center justify-between text-sm">
               <div className="font-medium">Grand Total</div>
               <div className="font-semibold">€ {grandTotal.toFixed(2)}</div>
             </div>

@@ -5,6 +5,7 @@ import './index.css'
 import App from './App'
 import { DataProvider } from './context/DataContext'
 import { MenuProvider } from './context/MenuContext'
+import { ThemeProvider } from './context/ThemeContext'
 import Dashboard from './pages/Dashboard'
 import IngredientsPage from './pages/IngredientsPage'
 import RecipesPage from './pages/RecipesPage'
@@ -25,10 +26,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <DataProvider>
-      <MenuProvider>
-        <RouterProvider router={router} />
-      </MenuProvider>
-    </DataProvider>
+    <ThemeProvider>
+      <DataProvider>
+        <MenuProvider>
+          <RouterProvider router={router} />
+        </MenuProvider>
+      </DataProvider>
+    </ThemeProvider>
   </React.StrictMode>
 )
