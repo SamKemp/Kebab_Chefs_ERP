@@ -1,5 +1,5 @@
 {
-    "name": "ingredient",
+    "name": "ingredient_name",
     "slug": "ingredient_slug",
     "store_slug": "store_slug",
     "price": 0,
