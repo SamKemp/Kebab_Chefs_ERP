@@ -5,8 +5,8 @@
         { "ingredientSlug": "ribeye_steak", "amount": 1 },
         { "ingredientSlug": "tail_fat", "amount": 1 },
         { "ingredientSlug": "black_pepper", "amount": 3 },
-        { "ingredientSlug": "salt", "amount": 3 }
-        { "ingredientSlug": "garlic", "amount": 1 }
+        { "ingredientSlug": "salt", "amount": 3 },
+        { "ingredientSlug": "garlic", "amount": 1 },
         { "ingredientSlug": "green_pepper", "amount":1 }
     ],
     "steps": [
