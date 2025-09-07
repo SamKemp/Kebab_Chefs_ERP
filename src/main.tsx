@@ -15,10 +15,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      { index: true, element: <Dashboard /> },
-  { path: 'ingredients', element: <IngredientsPage /> },
-      { path: 'recipes', element: <RecipesPage /> },
-      { path: 'stores', element: <StoresPage /> },
+        { index: true, element: <Dashboard /> },
+        { path: 'ingredients', element: <IngredientsPage /> },
+        { path: 'recipes', element: <RecipesPage /> },
+        { path: 'stores', element: <StoresPage /> },
     ],
   },
 ], { basename: (import.meta as any).env?.BASE_URL || '/' })

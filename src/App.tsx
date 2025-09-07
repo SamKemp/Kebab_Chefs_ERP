@@ -18,7 +18,7 @@ export default function App() {
         <Outlet />
       </main>
       <footer className="border-t bg-white">
-        <div className="container-erp py-4 text-xs text-gray-500">Kebab Chef ERP — static demo</div>
+        <div className="container-erp py-4 text-xs text-gray-500">Kebab Chef ERP</div>
       </footer>
     </div>
   )
