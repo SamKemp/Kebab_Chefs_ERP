@@ -1,54 +1,32 @@
-# Kebab Chef ERP (Static React + Vite + Tailwind)
+# Kebab Chefs ERP
 
-A lightweight ERP-style dashboard for Kebab Chef data. Uses static JSON under `public/data` and a small React app to display recipes, stores, and costs.
+MAIN APPLICATION: https://samkemp.github.io/Kebab_Chefs_ERP/
 
-## Scripts
+An unofficial lightweight ERP-style dashboard for Kebab Chefs data.  
+Store Page: https://store.steampowered.com/app/1001270/Kebab_Chefs__Restaurant_Simulator/
 
-```powershell
-# install deps
-npm install
+Kebab Chefs! is a Co-Op, cooking, and restaurant management game that can be played with up to 4 players. Design your own restaurant, cook delicious kebabs and other dishes, create a custom menu filled with mouth-watering recipes, serve your customers, and aim to become the biggest kebab restaurant in town!
 
-# start dev server
-npm run dev
+Whether you're managing the kitchen solo or working with friends, Kebab Chefs! offers a fun and frantic experience of running a restaurant together.
+Key Features:
 
-# type check
-npm run typecheck
+    Co-Op up to 4 players: Team up with your friends to manage a restaurant.
+    Design your restaurant: Build and customize your restaurant to attract more customers.
+    Cook various foods: Prepare kebabs and an array of recipes to serve.
+    Become the top restaurant in town: Feed your customers and grow your reputation!
 
-# build
-npm run build
+For more details and community support, join the Official Kebab Chefs! Discord.
+https://discord.gg/KCJ3XHwfeC
 
-# preview production build
-npm run preview
-```
 
-## Data
+This repository serves as a storage space for all the recipes featured in Kebab Chefs!. Here you will find:
 
-You can provide source JSON as either:
+    Detailed recipes with ingredients and instructions.
+    Updates to new recipes added to the game.
 
-1) Aggregated files under `public/data`:
-- `ingredients.json`: `[{ id, name, unit }]`
-- `recipes.json`: `[{ id, name, category?, ingredients: [{ ingredientId, amount }] }]`
-- `stores.json`: `[{ id, name, items: [{ ingredientId, pricePerUnit, stock? }] }]`
+Feel free to contribute, suggest, or modify any of the recipes by creating a pull request.
 
-2) Foldered files under `src/context` (recommended while editing):
-- `src/context/ingredients/*.json`
-- `src/context/recipes/*.json` or `src/context/recipies/*.json` (both supported)
-- `src/context/stores/*.json`
-
-Use the data build script to aggregate foldered files into `public/data/*.json`:
-
-```powershell
-npm run build:data
-```
-
-This runs automatically before `npm run dev` and `npm run build`.
-
-On load, the app fetches `public/data`. If missing, built-in fallback samples are used so the UI still works.
-
-## Notes
-- Routing is client-side; use the root path when deploying statically (no server rewrites).
-- Tailwind scans `index.html` and `src/**/*.{ts,tsx}`.
-- The `Table` component provides search and click-to-sort.
+Happy cooking!
 
 ## Special Thanks
 - Recipe, Ingredient and Store data: [midsubspace/Kebab_Simulator](https://github.com/midsubspace/Kebab_Simulator/)
