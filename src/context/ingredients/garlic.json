@@ -1,0 +1,9 @@
+{
+    "name": "Garlic",
+    "slug": "garlic",
+    "store_slug": "green_grocer",
+    "price": 4,
+    "quantity": 1,
+    "measure": "",
+    "measure_abbreviation": ""
+}

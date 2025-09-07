@@ -1,0 +1,21 @@
+{
+    "name": "Simple Kebab",
+    "slug": "simple_kebab",
+    "ingredients": [
+        { "ingredientSlug": "ribeye_steak", "amount": 1 },
+        { "ingredientSlug": "tail_fat", "amount": 1 },
+        { "ingredientSlug": "black_pepper", "amount": 3 },
+        { "ingredientSlug": "salt", "amount": 3 }
+        { "ingredientSlug": "garlic", "amount": 1 }
+        { "ingredientSlug": "green_pepper", "amount":1 }
+    ],
+    "steps": [
+        { "stepHeader": "Slice", "list": ["Ribeye x1 (Gives Two Ribeye Slices)", "Garlic (Gives Garlic Slices x1)"] },
+        { "stepHeader": "Grind Ribeye Slice with Meat Grinder", "list": [] },
+        { "stepHeader": "Add to Mixing Bowl", "list": ["Tail Fat Pieces x4", "Salt 3g", "Black Pepper 3g"] },
+        { "stepHeader": "Attach Kebab to Skewer from Mixing Bowl", "list": [] },
+        { "stepHeader": "Grill", "list": ["Kebab (Each Side)", "Green Pepper x1", "Garlic Slices x1"] },
+        { "stepHeader": "Transfer to Plate", "list": ["Detach Kebab from Skewer", "Garlic Slices x1", "Green Pepper x1"] },
+        { "stepHeader": "Serve Hot", "list": [] }
+    ]
+}

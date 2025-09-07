@@ -1,0 +1,9 @@
+{
+    "name": "Green Pepper",
+    "slug": "green_pepper",
+    "store_slug": "green_grocer",
+    "price": 3,
+    "quantity": 1,
+    "measure": "",
+    "measure_abbreviation": ""
+}

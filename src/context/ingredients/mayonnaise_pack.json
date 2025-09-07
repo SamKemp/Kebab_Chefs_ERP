@@ -3,7 +3,7 @@
     "slug": "mayonnaise_pack",
     "store_slug": "market",
     "price": 50,
-    "quantity": 100,
-    "measure": "",
-    "measure_abbreviation": ""
+    "quantity": 200,
+    "measure": "grams",
+    "measure_abbreviation": "g"
 }

@@ -3,7 +3,7 @@
     "slug": "sunflower_oil",
     "store_slug": "market",
     "price": 50,
-    "quantity": 1500,
-    "measure": "ml",
-    "measure_abbreviation": "ml"
+    "quantity": 0.15,
+    "measure": "liters",
+    "measure_abbreviation": "lt"
 }

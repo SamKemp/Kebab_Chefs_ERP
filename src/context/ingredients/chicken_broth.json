@@ -3,7 +3,7 @@
     "slug": "chicken_broth",
     "store_slug": "market",
     "price": 50,
-    "quantity": 1000,
-    "measure": "lt",
+    "quantity": 0.15,
+    "measure": "liters",
     "measure_abbreviation": "lt"
 }
