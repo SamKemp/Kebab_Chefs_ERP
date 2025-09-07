@@ -37,7 +37,7 @@ jobs:
         run: npx tsc -b
 
       - name: Build with Vite (GitHub Pages base)
-        run: npx vite build --base=/${{ github.event.repository.name }}/
+        run: npx vite build
 
       - name: Add SPA fallback (404.html)
         run: cp dist/index.html dist/404.html
