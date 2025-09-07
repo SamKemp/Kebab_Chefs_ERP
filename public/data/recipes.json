@@ -1,0 +1,125 @@
+[
+  {
+    "id": "french_fries",
+    "name": "French Fries",
+    "category": "General",
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "amount": 1
+      },
+      {
+        "ingredientId": "ketchup_pack",
+        "amount": 1
+      },
+      {
+        "ingredientId": "mayonnaise_pack",
+        "amount": 1
+      },
+      {
+        "ingredientId": "sunflower_oil",
+        "amount": 0.15
+      }
+    ],
+    "steps": [
+      {
+        "stepHeader": "Slice",
+        "list": [
+          "Potato x1 (Gives Potato Slices)"
+        ]
+      },
+      {
+        "stepHeader": "Slice",
+        "list": [
+          "Potato Slices x1 (Gives French Fries)"
+        ]
+      },
+      {
+        "stepHeader": "Add to a Deep Fryer",
+        "list": [
+          "Sunflower Oil 0.15 lt"
+        ]
+      },
+      {
+        "stepHeader": "Fry Using Deep Fryer",
+        "list": [
+          "French Fries x1"
+        ]
+      },
+      {
+        "stepHeader": "Transfer to Plate",
+        "list": [
+          "French Fries x1",
+          "Mayonnaise x1",
+          "Ketchup x1"
+        ]
+      },
+      {
+        "stepHeader": "Serve Hot",
+        "list": []
+      }
+    ]
+  },
+  {
+    "id": "grilled_beef",
+    "name": "Grilled Beef",
+    "category": "General",
+    "ingredients": [
+      {
+        "ingredientId": "ribeye_steak",
+        "amount": 1
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 3
+      },
+      {
+        "ingredientId": "tomato",
+        "amount": 1
+      },
+      {
+        "ingredientId": "parsley",
+        "amount": 1
+      }
+    ],
+    "steps": [
+      {
+        "stepHeader": "Slice",
+        "list": [
+          "Ribeye x1 (Gives Two Ribeye Slices)",
+          "Tomato x1 (Gives Tomato Slices)"
+        ]
+      },
+      {
+        "stepHeader": "Add to a Ribeye Slice",
+        "list": [
+          "Salt 3g",
+          "Black Pepper 3g"
+        ]
+      },
+      {
+        "stepHeader": "Grill",
+        "list": [
+          "Ribeye Slice x1 (Each Side)",
+          "Tomato Slices x1"
+        ]
+      },
+      {
+        "stepHeader": "Transfer to Plate",
+        "list": [
+          "Grilled Ribeye x1",
+          "Grilled Tomato Slices x1",
+          "Parsley Piece x2"
+        ]
+      },
+      {
+        "stepHeader": "Serve Hot",
+        "list": []
+      }
+    ]
+  }
+]

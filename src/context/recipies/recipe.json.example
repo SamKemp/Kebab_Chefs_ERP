@@ -1,0 +1,17 @@
+{
+    "name": "recipe_name",
+    "slug": "recipe_slug",
+    "ingredients": [
+        { "ingredientSlug": "potato", "amount": 1 },
+        { "ingredientSlug": "ketchup_pack", "amount": 1 },
+        { "ingredientSlug": "mayonnaise_pack", "amount": 1 },
+        { "ingredientSlug": "sunflower_oil", "amount": 0.15 }
+    ],
+    "steps": [
+        { "stepHeader": "Slice", "list": ["Ribeye x1 (Gives Two Ribeye Slices)", "Tomato x1 (Gives Tomato Slices)"] },
+        { "stepHeader": "Add to a Ribeye Slice", "list": ["Salt 3g", "Black Pepper 3g"] },
+        { "stepHeader": "Grill", "list": ["Ribeye Slice x1 (Each Side)", "Tomato Slices x1"] },
+        { "stepHeader": "Transfer to Plate", "list": ["Grilled Ribeye x1", "Grilled Tomato Slices x1", "Parsley Piece x2"] },
+        { "stepHeader": "Serve Hot", "list": [] }
+    ]
+}

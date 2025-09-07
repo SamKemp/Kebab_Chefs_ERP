@@ -1,0 +1,18 @@
+{
+    "name": "Grilled Beef",
+    "slug": "grilled_beef",
+    "ingredients": [
+        { "ingredientSlug": "ribeye_steak", "amount": 1 },
+        { "ingredientSlug": "salt", "amount": 3 },
+        { "ingredientSlug": "black_pepper", "amount": 3 },
+        { "ingredientSlug": "tomato", "amount": 1 },
+        { "ingredientSlug": "parsley", "amount": 1 }
+    ],
+    "steps": [
+        { "stepHeader": "Slice", "list": ["Ribeye x1 (Gives Two Ribeye Slices)", "Tomato x1 (Gives Tomato Slices)"] },
+        { "stepHeader": "Add to a Ribeye Slice", "list": ["Salt 3g", "Black Pepper 3g"] },
+        { "stepHeader": "Grill", "list": ["Ribeye Slice x1 (Each Side)", "Tomato Slices x1"] },
+        { "stepHeader": "Transfer to Plate", "list": ["Grilled Ribeye x1", "Grilled Tomato Slices x1", "Parsley Piece x2"] },
+        { "stepHeader": "Serve Hot", "list": [] }
+    ]
+}

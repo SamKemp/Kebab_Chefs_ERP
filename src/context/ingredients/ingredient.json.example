@@ -1,0 +1,9 @@
+{
+    "name": "ingredient",
+    "slug": "ingredient_slug",
+    "store_slug": "store_slug",
+    "price": 0,
+    "quantity": 0,
+    "measure": "",
+    "measure_abbreviation": ""
+}

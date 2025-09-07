@@ -1,0 +1,9 @@
+{
+    "name": "Salt",
+    "slug": "salt",
+    "store_slug": "market",
+    "price": 50,
+    "quantity": 100,
+    "measure": "grams",
+    "measure_abbreviation": "g"
+}

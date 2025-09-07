@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App-level tweaks */
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.container-erp {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-white shadow-sm border border-gray-200 rounded-lg;
+}
+
+.card-header {
+  @apply px-4 py-3 border-b border-gray-200 flex items-center justify-between;
+}
+
+.card-body {
+  @apply p-4;
+}

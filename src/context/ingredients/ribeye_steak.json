@@ -1,0 +1,9 @@
+{
+    "name": "Ribeye",
+    "slug": "ribeye_steak",
+    "store_slug": "butcher",
+    "price": 200,
+    "quantity": 1,
+    "measure": "",
+    "measure_abbreviation": ""
+}

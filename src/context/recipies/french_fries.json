@@ -1,0 +1,18 @@
+{
+    "name": "French Fries",
+    "slug": "french_fries",
+    "ingredients": [
+        { "ingredientSlug": "potato", "amount": 1 },
+        { "ingredientSlug": "ketchup_pack", "amount": 1 },
+        { "ingredientSlug": "mayonnaise_pack", "amount": 1 },
+        { "ingredientSlug": "sunflower_oil", "amount": 0.15 }
+    ],
+    "steps": [
+        { "stepHeader": "Slice", "list": ["Potato x1 (Gives Potato Slices)"] },
+        { "stepHeader": "Slice", "list": ["Potato Slices x1 (Gives French Fries)"] },
+        { "stepHeader": "Add to a Deep Fryer", "list": ["Sunflower Oil 0.15 lt"] },
+        { "stepHeader": "Fry Using Deep Fryer", "list": ["French Fries x1"] },
+        { "stepHeader": "Transfer to Plate", "list": ["French Fries x1", "Mayonnaise x1", "Ketchup x1"] },
+        { "stepHeader": "Serve Hot", "list": [] }
+    ]
+}
