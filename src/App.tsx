@@ -24,7 +24,7 @@ export default function App() {
         <Outlet />
       </main>
       <footer className="border-t bg-white dark:bg-gray-950 dark:border-gray-800">
-        <div className="container-erp py-4 text-xs text-gray-500 dark:text-gray-400">Kebab Chefs ERP | v0.0.1 {new Date().toISOString()}</div>
+        <div className="container-erp py-4 text-xs text-gray-500 dark:text-gray-400">Kebab Chefs ERP | v0.0.1</div>
         <div className="container-erp flex justify-end">
           <a
             href="https://github.com/SamKemp/Kebab_Chefs_ERP/"
