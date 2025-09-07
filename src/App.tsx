@@ -11,8 +11,8 @@ export default function App() {
           <nav className="flex items-center gap-4 text-sm">
             <NavLink to="/" end className={({isActive})=>`px-3 py-1 rounded-md ${isActive? 'bg-brand-50 text-brand-800 dark:bg-gray-800 dark:text-brand-200' : 'hover:bg-gray-100 dark:hover:bg-gray-800'}`}>Dashboard</NavLink>
             <NavLink to="/ingredients" className={({isActive})=>`px-3 py-1 rounded-md ${isActive? 'bg-brand-50 text-brand-800 dark:bg-gray-800 dark:text-brand-200' : 'hover:bg-gray-100 dark:hover:bg-gray-800'}`}>Ingredients</NavLink>
-            <NavLink to="/recipes" className={({isActive})=>`px-3 py-1 rounded-md ${isActive? 'bg-brand-50 text-brand-800 dark:bg-gray-800 dark:text-brand-200' : 'hover:bg-gray-100 dark:hover:bg-gray-800'}`}>Recipes</NavLink>
-            <NavLink to="/stores" className={({isActive})=>`px-3 py-1 rounded-md ${isActive? 'bg-brand-50 text-brand-800 dark:bg-gray-800 dark:text-brand-200' : 'hover:bg-gray-100 dark:hover:bg-gray-800'}`}>Stores</NavLink>
+            <NavLink to="/recipies" className={({isActive})=>`px-3 py-1 rounded-md ${isActive? 'bg-brand-50 text-brand-800 dark:bg-gray-800 dark:text-brand-200' : 'hover:bg-gray-100 dark:hover:bg-gray-800'}`}>Recipes</NavLink>
+            {/* <NavLink to="/stores" className={({isActive})=>`px-3 py-1 rounded-md ${isActive? 'bg-brand-50 text-brand-800 dark:bg-gray-800 dark:text-brand-200' : 'hover:bg-gray-100 dark:hover:bg-gray-800'}`}>Stores</NavLink> */}
           </nav>
           <div className="flex-1" />
           <button onClick={toggle} className="text-sm px-3 py-1 rounded-md border border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800" aria-label="Toggle dark mode">

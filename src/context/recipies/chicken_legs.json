@@ -1,0 +1,17 @@
+{
+    "name": "Chicken legs",
+    "slug": "chicken_legs",
+    "ingredients": [
+        { "ingredientSlug": "chicken_leg", "amount": 2 },
+        { "ingredientSlug": "salt", "amount": 3 },
+        { "ingredientSlug": "chili_pepper", "amount": 3 },
+        { "ingredientSlug": "tomato", "amount": 1 }
+    ],
+    "steps": [
+        { "stepHeader": "Season Each Chicken Leg With", "list": ["Salt 3g", "Chili Pepper 3g"] },
+        { "stepHeader": "Slice", "list": ["Tomato x1 (Gives Tomato Slices x1)"] },
+        { "stepHeader": "Grill", "list": ["Chicken Leg x2 (Each Side)", "Tomato Slices x1"] },
+        { "stepHeader": "Transfer to Plate", "list": ["Grilled Chicken Leg x2", "Grilled Tomato Slices x1"] },
+        { "stepHeader": "Serve Hot", "list": [] }
+    ]
+}

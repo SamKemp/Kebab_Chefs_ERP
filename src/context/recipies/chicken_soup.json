@@ -1,0 +1,17 @@
+{
+    "name": "Chicken Soup",
+    "slug": "chicken_soup",
+    "ingredients": [
+        { "ingredientSlug": "water", "amount": 1.20 },
+        { "ingredientSlug": "chicken_broth", "amount": 0.15 },
+        { "ingredientSlug": "chicken_breast", "amount": 2 },
+        { "ingredientSlug": "lemon", "amount": 1 }
+    ],
+    "steps": [
+        { "stepHeader": "Slice", "list": ["Chicken Breast x2 (Gives Chicken Skewers x8)", "Lemon (Gives Lemon Slice x2)"] },
+        { "stepHeader": "Add to Cookpot", "list": ["Water 1.20 lt", "Chicken Broth 0.15 lt", "Chicken Skewers x8", "Lemon Slice x2"] },
+        { "stepHeader": "Boil", "list": [] },
+        { "stepHeader": "Transfer to Soup Plate", "list": ["Mixture 0.20 lt"] },
+        { "stepHeader": "Serve Hot", "list": [] }
+    ]
+}

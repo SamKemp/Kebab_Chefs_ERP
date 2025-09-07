@@ -1,0 +1,9 @@
+{
+    "name": "Water",
+    "slug": "water",
+    "store_slug": "",
+    "price": 0,
+    "quantity": 0,
+    "measure": "lt",
+    "measure_abbreviation": "lt"
+}

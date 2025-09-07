@@ -44,6 +44,18 @@ export function MenuProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem(KEY, JSON.stringify({ items, selectedRecipeId }))
   }, [items, selectedRecipeId, hydrated])
 
+  // Ensure selected recipe is cleared if the menu is empty or
+  // if the previously selected recipe is no longer in the menu
+  useEffect(() => {
+    if (items.length === 0) {
+      if (selectedRecipeId !== null) setSelectedRecipeId(null)
+      return
+    }
+    if (selectedRecipeId && !items.some(i => i.recipeId === selectedRecipeId)) {
+      setSelectedRecipeId(null)
+    }
+  }, [items, selectedRecipeId])
+
   const add = useCallback((recipeId: string, quantity = 1) => {
     setItems(prev => {
       const idx = prev.findIndex(i => i.recipeId === recipeId)

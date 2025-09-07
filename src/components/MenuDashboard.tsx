@@ -80,7 +80,7 @@ export default function MenuDashboard() {
       </div>
 
       <div className="card lg:col-span-1">
-        <div className="card-header"><div className="font-medium">Selected Recipe Steps</div></div>
+        <div className="card-header"><div className="font-medium">{selectedRecipe ? `${selectedRecipe.name} Steps` : 'Selected Recipe Steps'}</div></div>
         <div className="card-body">
           {!selectedRecipe && <div className="text-sm text-gray-500 dark:text-gray-400">Select a recipe from the menu.</div>}
           {selectedRecipe && (

@@ -1,0 +1,9 @@
+{
+    "name": "Chicken Leg",
+    "slug": "chicken_leg",
+    "store_slug": "butcher",
+    "price": 60,
+    "quantity": 1,
+    "measure": "",
+    "measure_abbreviation": ""
+}

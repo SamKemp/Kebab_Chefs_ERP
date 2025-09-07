@@ -1,0 +1,9 @@
+{
+    "name": "Chicken Breast",
+    "slug": "chicken_breast",
+    "store_slug": "butcher",
+    "price": 180,
+    "quantity": 1,
+    "measure": "",
+    "measure_abbreviation": ""
+}

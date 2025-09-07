@@ -1,0 +1,9 @@
+{
+    "name": "Chicken Broth",
+    "slug": "chicken_broth",
+    "store_slug": "market",
+    "price": 50,
+    "quantity": 1000,
+    "measure": "lt",
+    "measure_abbreviation": "lt"
+}
