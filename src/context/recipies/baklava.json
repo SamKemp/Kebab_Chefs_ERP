@@ -1,0 +1,21 @@
+{
+    "name": "Backlava",
+    "slug": "baklava",
+    "ingredients": [
+        { "ingredientSlug": "sugar", "amount": 150 },
+        { "ingredientSlug": "flour", "amount": 400 },
+        { "ingredientSlug": "pistachios", "amount": 100 },
+        { "ingredientSlug": "butter", "amount": 200 },
+        { "ingredientSlug": "yeast", "amount": 1 },
+        { "ingredientSlug": "egg", "amount": 3 }
+    ],
+    "steps": [
+        { "stepHeader": "Add to a Mixing Bowl and Mix Using Stand Mixer (Gives Baklava Layer x2)", "list": ["Flour 400g", "Yeast", "Egg x3"] },
+        { "stepHeader": "Add to a Mixing Bowl and Mix using Stand Mixer (Gives Baklava Mixture)", "list": ["Pistachios 100g", "Sugar 150g", "Butter 200g"] },
+        { "stepHeader": "Add Baklava Mixture to Baklava Layer", "list": [] },
+        { "stepHeader": "Transfer to Dessert Tray", "list": [] },
+        { "stepHeader": "Bake in the Oven", "list": [] },
+        { "stepHeader": "Cool in fridge", "list": [] },
+        { "stepHeader": "Serve Cold", "list": [] }
+    ]
+}

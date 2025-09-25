@@ -1,0 +1,9 @@
+{
+    "name": "Sugar",
+    "slug": "sugar",
+    "store_slug": "market",
+    "price": 220,
+    "quantity": 400,
+    "measure": "grams",
+    "measure_abbreviation": "g"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Pistachios",
+    "slug": "pistachios",
+    "store_slug": "market",
+    "price": 550,
+    "quantity": 100,
+    "measure": "grams",
+    "measure_abbreviation": "g"
+}

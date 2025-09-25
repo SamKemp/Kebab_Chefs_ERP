@@ -1,0 +1,9 @@
+{
+    "name": "Yeast",
+    "slug": "yeast",
+    "store_slug": "market",
+    "price": 100,
+    "quantity": 1,
+    "measure": "sachet",
+    "measure_abbreviation": "sachet"
+}

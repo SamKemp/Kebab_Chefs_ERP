@@ -1,0 +1,9 @@
+{
+    "name": "Egg",
+    "slug": "egg",
+    "store_slug": "market",
+    "price": 250,
+    "quantity": 6,
+    "measure": "eggs",
+    "measure_abbreviation": "eggs"
+}

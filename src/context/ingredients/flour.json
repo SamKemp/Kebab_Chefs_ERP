@@ -1,0 +1,9 @@
+{
+    "name": "Flour",
+    "slug": "flour",
+    "store_slug": "market",
+    "price": 200,
+    "quantity": 400,
+    "measure": "grams",
+    "measure_abbreviation": "g"
+}

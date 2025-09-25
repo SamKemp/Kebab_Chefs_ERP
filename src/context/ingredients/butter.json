@@ -1,0 +1,9 @@
+{
+    "name": "Butter",
+    "slug": "butter",
+    "store_slug": "market",
+    "price": 70,
+    "quantity": 200,
+    "measure": "grams",
+    "measure_abbreviation": "g"
+}
